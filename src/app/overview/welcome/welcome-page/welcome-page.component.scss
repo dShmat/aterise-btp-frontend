@@ -62,18 +62,16 @@ main {
   font-size: 20px;
   color: #000000;
   margin-left: 60px;
-}
-
-.beginners-guide-question {
   position: relative;
-}
-
-.beginners-guide-question::before {
-  content: url('../../../../assets/icons/icon-plus.svg');
   width: 40px;
   height: 40px;
+}
+
+.link::before {
+  content: url('../../../../assets/icons/icon-plus.svg');
   position: absolute;
-  bottom: 0;
+  left: -60px;
+  bottom: -17px;
 }
 
 .border {

@@ -1,3 +1,8 @@
+main {
+  height: 100%;
+  background: white;
+}
+
 .overview-section {
   height: 230px;
   background: linear-gradient(88.67deg, #117DA1 0%, #219967 100%);
@@ -6,15 +11,73 @@
 .overview-icon {
   width: 80px;
   height: 80px;
+  margin-right: 35px;
 }
 
-h2 {
+.overview-section h2 {
   font-size: 36px;
   color: white;
   font-weight: 400;
 }
 
-p {
+.overview-section p {
   font-size: 20px;
   color: white;
 }
+
+.beginners-guide {
+  padding: 94px 85px 85px;
+  background: #FFFFFF;
+}
+
+.beginners-guide h2 {
+  margin-bottom: 86px;
+  font-weight: 700;
+  font-size: 36px;
+  color: #000000;
+}
+
+.beginners-guide h3 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.beginners-guide p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.token-info-block {
+  background: #F1F1F1;
+  border-radius: 15px;
+}
+
+.token-info-text {
+  padding: 40px 19px;
+}
+
+.link {
+  font-size: 20px;
+  color: #000000;
+  margin-left: 60px;
+}
+
+.beginners-guide-question {
+  position: relative;
+}
+
+.beginners-guide-question::before {
+  content: url('../../../../assets/icons/icon-plus.svg');
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+}
+
+.border {
+  margin: 33px 0;
+  width: 100%;
+}
+

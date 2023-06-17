@@ -8,3 +8,13 @@ body {
   background: $brand-primary-lightest;
   font-family: $brand-font;
 }
+
+.main-wrapper {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  padding-top: 50px;
+  transition: padding-top 0.2s;
+  overflow: hidden;
+  min-height: calc(100vh - 145px);
+}

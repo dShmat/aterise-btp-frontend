@@ -1,7 +1,106 @@
 .log-in-container {
   background: white;
+  padding-left: 86px;
+  padding-top: 65px;
+  padding-right: 20px;
+  overflow: auto;
 }
 
 .image-container h2 {
   margin-top: 73px;
+  margin-bottom: 17px;
 }
+
+
+.log-in-subtitle{
+  font-weight: 700;
+  font-size: 16px;
+  color: #000000;
+}
+.log-in-subtitle a{
+  color: #117DA1;
+}
+.log-in-subtitle-block{
+  margin: 50px 0 20px;
+}
+.log-in-subtitle-block a{
+  font-weight: 400;
+  font-size: 16px;
+  color: #117DA1;
+}
+
+.registration-items{
+    border: 1px solid none;
+    background-color: #F1F1F1;
+    width: 47%;
+    height: 145px;
+    border-radius: 15px;
+    margin-top: 48px;
+}
+.registration-items-text{
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  position: relative;
+  margin-left: 40px;
+}
+.registration-items .individual::before{
+  content: url(../../../../assets/icons/individual-icon.svg);
+  width: 32px;
+  height: 40px;
+  position: absolute;
+  right: 130px;
+  top: -5px;
+}
+.registration-items .business::before{
+  content: url(../../../../assets/icons/business_icon.svg);
+  width: 32px;
+  height: 40px;
+  position: absolute;
+  right: 130px;
+  top: -5px;
+}
+
+.log-in-large-input{
+  width: 100%;
+  border: none;
+  background-color: #F1F1F1;
+  min-height: 50px;
+  border-radius: 15px;
+  text-indent: 30px;
+  font-size: 20px;
+}
+
+.log-in-small-input{
+  width: 47%;
+  border: none;
+  background-color: #F1F1F1;
+  min-height: 50px;
+  border-radius: 15px;
+  text-indent: 30px;
+  font-size: 20px;
+}
+.sms-btn{
+  width: 47%;
+  border: 1px solid #117DA1;
+  min-height: 50px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  color: #117DA1;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.log-in-container .log-in-btn{
+  width: 100%;
+  min-height: 50px;
+  background: #117DA1;
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 80px 0;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+

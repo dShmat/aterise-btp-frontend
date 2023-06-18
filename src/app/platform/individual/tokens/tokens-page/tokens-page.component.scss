@@ -122,10 +122,6 @@ tr {
   height: 25px;
 }
 
-.even {
-  background-color: #f2f2f2;
-}
-
 .usd-rate-color {
   font-size: 14px;
   color: #219967;
@@ -191,4 +187,7 @@ tr {
 
 .btn-send-messages span {
   margin-left: 25px;
+}
+.table-striped{
+  background-color: #ececec;
 }

@@ -1,0 +1,115 @@
+.token {
+  padding: 85px;
+}
+
+.token h2 {
+  margin-bottom: 76px;
+}
+
+.token-card {
+  border: 2px solid #219967;
+  border-radius: 15px;
+  min-height: 375px;
+  width: 30%;
+  margin-bottom: 35px;
+}
+
+.yellow {
+  border: 2px solid #CE7E06;
+}
+
+.token-card:last-child {
+  margin-right: 0;
+}
+
+.token-card-header {
+  background-color: #219967;
+  height: 44px;
+  border-radius: 8px 8px 0 0;
+  color: #FFFFFF;
+  text-indent: 30px;
+  font-size: 20px;
+}
+
+.yellow .token-card-header {
+  background-color: #CE7E06;
+}
+
+.wrapper-company {
+  margin-top: 13px;
+}
+
+.company-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #000000;
+  position: relative;
+}
+
+.company-name::before {
+  content: url('../../../../assets/icons/company-icon.svg');
+  width: 30px;
+  height: 20px;
+  right: 130px;
+  position: absolute;
+  right: 130px;
+
+}
+
+.more {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+}
+
+.more::after {
+  content: url('../../../../assets/icons/row-more.svg');
+  width: 14px;
+  height: 10px;
+  position: absolute;
+  left: 50px;
+}
+
+.percent {
+  font-weight: 700;
+  font-size: 48px;
+  color: #219967;
+  margin-top: 50px;
+}
+
+.yellow .percent {
+  color: #CE7E06;
+}
+
+.percent-subtitle {
+  font-size: 14px;
+  color: #b6b5b5;
+  margin-bottom: 24px;
+}
+
+.btn-buy a {
+  border: 1px solid #219967;
+  width: 102px;
+  height: 46px;
+  background: #219967;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.yellow .btn-buy a {
+  border: 1px solid #CE7E06;
+  background: #CE7E06;
+}
+
+.token-card-footer {
+  margin-top: 35px;
+  font-size: 14px;
+  text-align: center;
+  color: #219967;
+}
+
+.yellow .token-card-footer {
+  color: #CE7E06;
+}

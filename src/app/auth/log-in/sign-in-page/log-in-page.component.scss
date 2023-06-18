@@ -11,7 +11,6 @@
   margin-bottom: 17px;
 }
 
-
 .log-in-subtitle{
   font-weight: 700;
   font-size: 16px;
@@ -104,3 +103,16 @@
   color: #FFFFFF;
 }
 
+.password{
+  position: relative;
+}
+
+.password::after{
+  content: '';
+  background-image: url(../../../../assets/icons/password-icon.svg);
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 60px;
+  right: 20px;
+}

@@ -16,12 +16,14 @@
   font-weight: 700;
   font-size: 16px;
   color: #000000;
+  margin-bottom: 20px;
 }
 .log-in-subtitle a{
   color: #117DA1;
 }
 .log-in-subtitle-block{
-  margin: 50px 0 20px;
+  margin: 50px 0 0;
+  width: 47%;
 }
 .log-in-subtitle-block a{
   font-weight: 400;
@@ -43,6 +45,7 @@
   color: #000000;
   position: relative;
   margin-left: 40px;
+  margin-bottom: 0;
 }
 .registration-items .individual::before{
   content: url(../../../../assets/icons/individual-icon.svg);
@@ -80,6 +83,7 @@
   text-indent: 30px;
   font-size: 20px;
 }
+
 .sms-btn{
   width: 47%;
   border: 1px solid #117DA1;
@@ -103,4 +107,32 @@
   font-size: 16px;
   color: #FFFFFF;
 }
+.password{
+  position: relative;
+}
+.password::after{
+  content: '';
+  background-image: url(../../../../assets/icons/password-icon.svg);
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 60px;
+  right: 20px;
+}
+
+.country-block{
+  position: relative;
+}
+  .country-block::before{
+    content: '';
+    background-image: url(../../../../assets/icons/flag-icon.svg);
+    position: absolute;
+    width: 38px;
+    height: 20px;
+    top:57px;
+    left: 27px;
+  }
+  .country-block input{
+    text-indent: 75px;
+  }
 

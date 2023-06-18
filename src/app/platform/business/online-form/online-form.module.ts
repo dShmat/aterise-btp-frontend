@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { OnlineFormPageComponent } from './online-form-page/online-form-page.component';
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {OnlineFormPageComponent} from './online-form-page/online-form-page.component';
+import {OnlineFormRoutingModule} from './online-form-routing.module';
 
 
 @NgModule({
@@ -9,7 +9,9 @@ import { OnlineFormPageComponent } from './online-form-page/online-form-page.com
     OnlineFormPageComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    OnlineFormRoutingModule
   ]
 })
-export class OnlineFormModule { }
+export class OnlineFormModule {
+}

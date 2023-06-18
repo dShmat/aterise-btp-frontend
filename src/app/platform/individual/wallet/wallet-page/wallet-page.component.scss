@@ -1,9 +1,9 @@
-.top-up {
+.wallet {
   padding: 40px 86px 30px 69px;
-}
 
-.top-up h2 {
-  margin-bottom: 39px;
+  h2 {
+    margin-bottom: 39px;
+  }
 }
 
 .currency-card {
@@ -38,17 +38,15 @@
   font-weight: 500;
   margin-left: 25px;
   position: relative;
+
+  &::before {
+    content: url(../../../../../assets/icons/usd-small.svg);
+    width: 18px;
+    position: absolute;
+    height: 18px;
+    left: -25px;
+  }
 }
-
-.total-usd::before {
-  content: url(../../../../../assets/icons/usd-small.svg);
-  width: 18px;
-  position: absolute;
-  height: 18px;
-  left: -25px;
-
-}
-
 
 .card-border {
   border-top: 1px solid #9d9d9d;
@@ -78,13 +76,25 @@
 
 .selected-currency-block {
   min-height: 438px;
-  margin-bottom: 33px;
+  margin-bottom: 46px;
+
+  .title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 35px;
+  }
 }
 
 .selected-currency-more {
   background-color: #5e5d5b;
   width: 50%;
   padding: 35px 25px;
+
+  .sum {
+    font-size: 16px;
+    color: #FFFFFF;
+  }
 }
 
 .selected-currency-top-up {
@@ -92,13 +102,19 @@
   background: #3F3F46;
   padding: 35px 25px;
 
-}
+  .total-sum-text {
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
 
-.selected-currency-block .title {
-  font-weight: 700;
-  font-size: 16px;
-  color: #FFFFFF;
-  margin-bottom: 35px;
+  .total-sum {
+    font-size: 16px;
+    color: #FFFFFF;
+    span {
+      color: #0BD0FE;
+    }
+  }
 }
 
 .selected-currency-more-text {
@@ -108,26 +124,21 @@
   margin-bottom: 16px;
 }
 
-.selected-currency-more .sum {
-  font-size: 16px;
-  color: #FFFFFF;
-}
-
 .selected-currency-more-block {
   width: 60%;
 }
 
 .usd-white {
   position: relative;
-}
 
-.usd-white::before {
-  content: url(../../../../../assets/icons/usd-white.svg);
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  right: 100px;
-  top: 3px;
+  &::before {
+    content: url(../../../../../assets/icons/usd-white.svg);
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 100px;
+    top: 3px;
+  }
 }
 
 .top-up-subtitle {
@@ -167,12 +178,12 @@
   font-weight: 400;
   font-size: 16px;
   color: #56D4FE;
-}
 
-.payment-method::placeholder {
-  color: #56D4FE;
-  font-weight: 400;
-  font-size: 16px;
+  &::placeholder {
+    color: #56D4FE;
+    font-weight: 400;
+    font-size: 16px;
+  }
 }
 
 .card-visa-mastercard {
@@ -193,60 +204,20 @@
   z-index: 1;
 }
 
-.payment-method-bank::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  color: #FFFFFF;
-  text-indent: 50px;
-}
-
 .payment-method-bank {
   color: #FFFFFF;
   text-indent: 50px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-indent: 50px;
+  }
 }
 
 .text-commission {
   font-size: 14px;
   color: #FFFFFF;
   margin: 13px 0 30px;
-}
-
-.selected-currency-top-up .total-sum-text {
-  font-weight: 700;
-  font-size: 16px;
-  color: #FFFFFF;
-}
-
-.selected-currency-top-up .total-sum {
-  font-size: 16px;
-  color: #FFFFFF;
-}
-
-.selected-currency-top-up .total-sum span {
-  color: #0BD0FE;
-}
-
-.btn-send-messages {
-  width: 320px;
-  height: 66px;
-  background: #117DA1;
-  border-radius: 50px;
-  font-weight: 400;
-  font-size: 16px;
-  color: #FFFFFF;
-  position: relative;
-  cursor: pointer;
-}
-
-.btn-send-messages::before {
-  content: url(../../../../../assets/icons/message-icon.svg);
-  width: 18px;
-  height: 14px;
-  position: absolute;
-  left: 70px;
-  bottom: 30px;
-}
-
-.btn-send-messages span {
-  margin-left: 25px;
 }

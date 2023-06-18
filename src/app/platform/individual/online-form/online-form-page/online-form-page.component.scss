@@ -1,0 +1,40 @@
+main {
+  padding: 40px 86px 30px 69px;
+
+  .title {
+    padding-bottom: 19px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+
+    h2 {
+      margin: 0;
+    }
+
+    .badge-success {
+      width: 104px;
+      height: 28px;
+      color: #219967;
+      border-radius: 15px;
+      border: 1px solid #219967;
+      background: #219967;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 6px 13px;
+    }
+  }
+
+  .section-name {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .personal-data-section, .contact-information-section {
+    padding: 19px 0;
+  }
+
+  .contact-information-section {
+    margin-top: 20px;
+    margin-bottom: 71px;
+  }
+}
+

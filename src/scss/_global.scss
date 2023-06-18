@@ -26,6 +26,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 85px;
+  z-index: 1;
 }
 
 .main-wrapper {
@@ -63,3 +64,70 @@ input {
     border: 2px solid #dc3545;
   }
 }
+
+.custom-input {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(244, 244, 244);
+}
+
+.custom-input, .custom-label {
+  font-size: 16px;
+  transition: .3s ease-in-out;
+}
+
+.custom-input:focus + .custom-label,
+input.ng-valid + .custom-label {
+  font-size: 14px;
+  height: 20px;
+  top: -10px;
+  pointer-events: none;
+  background-color: rgb(244, 244, 244);
+}
+
+.custom-label {
+  height: 50px;
+  position: absolute;
+  padding: 0 10px;
+  top: 0;
+  left: 20px;
+  color: rgba(0, 0, 0, 0.3);;
+  display: flex;
+  align-items: center;
+  cursor: text;
+}
+
+.btn-send-messages {
+  width: 320px;
+  height: 66px;
+  background: #117DA1;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  position: relative;
+  cursor: pointer;
+
+  & ::before {
+    content: url(../assets/icons/message-icon.svg);
+    width: 18px;
+    height: 14px;
+    position: absolute;
+    left: 70px;
+    bottom: 30px;
+  }
+
+  span {
+    margin-left: 25px;
+  }
+}
+
+.form-field {
+  position: relative;
+  margin-top: 50px;
+}
+
+

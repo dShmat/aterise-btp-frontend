@@ -1,1 +1,115 @@
-<p>online-form-page works!</p>
+<main>
+  <section class="title d-flex align-items-center">
+    <h2 class="text-left me-5">Client’s online form</h2>
+    <span class="badge badge-success text-white text-uppercase">Approved</span>
+  </section>
+  <section class="personal-data-section">
+    <p class="section-name text-uppercase">Passport photo and personal data</p>
+    <form [formGroup]="personalForm">
+      <div class="row d-flex">
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="surname"
+                 type="text"
+                 formControlName="surname">
+          <label for="surname" class="custom-label">Surname</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="name"
+                 type="text"
+                 formControlName="name">
+          <label for="name" class="custom-label">Name</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="citizenship"
+                 type="text"
+                 formControlName="citizenship">
+          <label for="citizenship" class="custom-label">Citizenship</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="dob"
+                 type="text"
+                 formControlName="dob">
+          <label for="dob" class="custom-label">Date of birth</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="pob"
+                 type="text"
+                 formControlName="pob">
+          <label for="pob" class="custom-label">Place of birth</label>
+        </div>
+      </div>
+    </form>
+  </section>
+  <section class="contact-information-section">
+    <p class="section-name text-uppercase">Identification document data and contact information</p>
+    <form [formGroup]="contactForm">
+      <div class="row d-flex">
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="docType"
+                 type="text"
+                 formControlName="docType">
+          <label for="docType" class="custom-label">Type of document</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="docNumber"
+                 type="text"
+                 formControlName="docNumber">
+          <label for="docNumber" class="custom-label">Document number</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="idNumber"
+                 type="text"
+                 formControlName="idNumber">
+          <label for="idNumber" class="custom-label">ID number</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="issueDate"
+                 type="text"
+                 formControlName="issueDate">
+          <label for="issueDate" class="custom-label">Date of issue</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="expirationDate"
+                 type="text"
+                 formControlName="expirationDate">
+          <label for="expirationDate" class="custom-label">Expiration date</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="issuedBy"
+                 type="text"
+                 formControlName="issuedBy">
+          <label for="issuedBy" class="custom-label">Issued by</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="mobileNumber"
+                 type="text"
+                 formControlName="mobileNumber">
+          <label for="mobileNumber" class="custom-label">Mobile number</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="email"
+                 type="email"
+                 formControlName="email">
+          <label for="email" class="custom-label">Email</label>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <div class=" d-flex justify-content-end">
+    <div class="btn-send-messages d-flex justify-content-center align-items-center"><span>Send us a message</span></div>
+  </div>
+</main>

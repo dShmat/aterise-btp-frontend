@@ -11,56 +11,68 @@
   margin-bottom: 17px;
 }
 
-.log-in-subtitle{
+.log-in-subtitle {
   font-weight: 700;
   font-size: 16px;
   color: #000000;
 }
-.log-in-subtitle a{
+
+.log-in-subtitle a {
   color: #117DA1;
 }
-.log-in-subtitle-block{
-  margin: 50px 0 20px;
+
+.log-in-subtitle-block {
+  margin: 36px 0 0;
 }
-.log-in-subtitle-block a{
+
+.log-in-subtitle-block a {
   font-weight: 400;
   font-size: 16px;
   color: #117DA1;
 }
 
-.registration-items{
-    border: 1px solid none;
-    background-color: #F1F1F1;
-    width: 47%;
-    height: 145px;
-    border-radius: 15px;
-    margin-top: 48px;
-}
-.registration-items-text{
-  font-weight: 400;
-  font-size: 24px;
-  color: #000000;
-  position: relative;
-  margin-left: 40px;
-}
-.registration-items .individual::before{
-  content: url(../../../../assets/icons/individual-icon.svg);
-  width: 32px;
-  height: 40px;
-  position: absolute;
-  right: 130px;
-  top: -5px;
-}
-.registration-items .business::before{
-  content: url(../../../../assets/icons/business_icon.svg);
-  width: 32px;
-  height: 40px;
-  position: absolute;
-  right: 130px;
-  top: -5px;
+.registration-items {
+  background-color: #F1F1F1;
+  width: 47%;
+  height: 145px;
+  border-radius: 15px;
+  margin-top: 28px;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+
+  .individual::before {
+    content: url(../../../../assets/icons/individual-icon.svg);
+    width: 32px;
+    height: 40px;
+    position: absolute;
+    right: 130px;
+    top: -5px;
+  }
+
+  .business::before {
+    content: url(../../../../assets/icons/business_icon.svg);
+    width: 32px;
+    height: 40px;
+    position: absolute;
+    right: 130px;
+    top: -5px;
+  }
+
+  .registration-items-text {
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
 }
 
-.log-in-large-input{
+.active {
+  border: 2px solid #117DA1;
+}
+
+.log-in-large-input {
   width: 100%;
   border: none;
   background-color: #F1F1F1;
@@ -70,7 +82,8 @@
   font-size: 20px;
 }
 
-.log-in-small-input{
+
+.log-in-small-input {
   width: 47%;
   border: none;
   background-color: #F1F1F1;
@@ -79,7 +92,8 @@
   text-indent: 30px;
   font-size: 20px;
 }
-.sms-btn{
+
+.sms-btn {
   width: 47%;
   border: 1px solid #117DA1;
   min-height: 50px;
@@ -91,7 +105,7 @@
   cursor: pointer;
 }
 
-.log-in-container .log-in-btn{
+.log-in-container .log-in-btn {
   width: 100%;
   min-height: 50px;
   background: #117DA1;
@@ -103,11 +117,11 @@
   color: #FFFFFF;
 }
 
-.password{
+.password {
   position: relative;
 }
 
-.password::after{
+.password::after {
   content: '';
   background-image: url(../../../../assets/icons/password-icon.svg);
   position: absolute;

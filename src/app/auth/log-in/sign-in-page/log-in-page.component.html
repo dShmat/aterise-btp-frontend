@@ -6,33 +6,46 @@
     </p>
 
     <div class="d-flex w-100  justify-content-between ">
-      <div class="registration-items d-flex justify-content-around align-items-center "><p
-        class="registration-items-text individual">Individual</p></div>
-      <div class="registration-items d-flex justify-content-around align-items-center"><p
-        class="registration-items-text business">Business</p></div>
+      <div class="registration-items d-flex justify-content-around align-items-center" [class.active]="isIndividual"
+           (click)="selectIndividual()">
+        <p class="registration-items-text individual">Individual</p>
+      </div>
+      <div class="registration-items d-flex justify-content-around align-items-center" [class.active]="isBusiness"
+           (click)="selectBusiness()">
+        <p class="registration-items-text business">Business</p>
+      </div>
     </div>
     <div class="w-100">
-      <div class="log-in-subtitle-block d-flex justify-content-between">
-        <p class="log-in-subtitle">Login</p>
-        <a routerLink="/auth/sign-up" class="text-decoration-none">Forgot login?</a>
-      </div>
-      <input class="log-in-large-input" placeholder="Login">
+      <form [formGroup]="loginForm">
+        <div class="log-in-subtitle-block d-flex justify-content-between">
+          <p class="log-in-subtitle">Login</p>
+          <a class="text-decoration-none">Forgot login?</a>
+        </div>
+        <input class="log-in-large-input"
+               placeholder="Login"
+               formControlName="login">
 
-      <div class="log-in-subtitle-block d-flex justify-content-between">
-        <p class="log-in-subtitle">Password</p>
-        <a href="" class="text-decoration-none">Forgot password?</a>
-      </div>
-      <input class="log-in-large-input password" type="password" placeholder="Password">
+        <div class="log-in-subtitle-block d-flex justify-content-between">
+          <p class="log-in-subtitle">Password</p>
+          <a class="text-decoration-none">Forgot password?</a>
+        </div>
+        <input class="log-in-large-input password"
+               type="password"
+               placeholder="Password"
+               formControlName="password">
 
-      <div class="log-in-subtitle-block d-flex justify-content-between">
-        <p class="log-in-subtitle">Code SMS</p>
-      </div>
-      <div class="d-flex justify-content-between">
-        <input class="log-in-small-input" placeholder="SMS Code">
-        <div class="sms-btn d-flex align-items-center justify-content-center">Get SMS</div>
-      </div>
+        <div class="log-in-subtitle-block d-flex justify-content-between">
+          <p class="log-in-subtitle">Code SMS</p>
+        </div>
+        <div class="d-flex justify-content-between">
+          <input class="log-in-small-input"
+                 placeholder="SMS Code"
+                 formControlName="smsCode">
+          <div class="sms-btn d-flex align-items-center justify-content-center">Get SMS</div>
+        </div>
 
-      <div class="log-in-btn d-flex justify-content-center align-items-center">Log in</div>
+        <button class="log-in-btn d-flex justify-content-center align-items-center" (click)="onLogin()">Log in</button>
+      </form>
     </div>
 
   </section>

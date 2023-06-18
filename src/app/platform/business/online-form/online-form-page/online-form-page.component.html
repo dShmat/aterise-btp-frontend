@@ -1,12 +1,136 @@
-<p>online-form-page works!</p>
-<p>online-form-page works!</p>
-<p>online-form-page works!</p>
-<p>online-form-page works!</p>
-<p>online-form-page works!</p>
-<p>online-form-page works!</p>
-<p>online-form-page works!</p>
-<p>online-form-page works!</p>
-<p>online-form-page works!</p>
-<p>online-form-page works!</p>
-<p>online-form-page works!</p>
-<p>online-form-page works!</p>
+<main>
+  <section class="title d-flex align-items-center justify-content-between">
+    <h2 class="text-left me-5">Electronic client registration form</h2>
+    <p>*-obligatory fields</p>
+  </section>
+  <section class="entity-data-section">
+    <p class="section-name text-uppercase">Entity data | Resident of the Federal Republic of Germany</p>
+    <form [formGroup]="entityForm">
+      <div class="row d-flex">
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="fullName"
+                 type="text"
+                 formControlName="fullName">
+          <label for="fullName" class="custom-label">Full name of the organization*</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="shortName"
+                 type="text"
+                 formControlName="shortName">
+          <label for="shortName" class="custom-label">Short name of the organization*</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="accNumber"
+                 type="text"
+                 formControlName="accNumber">
+          <label for="accNumber" class="custom-label">Payer account number*</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="registrationAuthority"
+                 type="text"
+                 formControlName="registrationAuthority">
+          <label for="registrationAuthority" class="custom-label">Registration authority*</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="registrationNumber"
+                 type="text"
+                 formControlName="registrationNumber">
+          <label for="registrationNumber" class="custom-label">Registration number*</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="registrationDate"
+                 type="text"
+                 formControlName="registrationDate">
+          <label for="registrationDate" class="custom-label">Date of registration*</label>
+        </div>
+      </div>
+    </form>
+  </section>
+  <section class="legal-information-section">
+    <p class="section-name text-uppercase">legal address</p>
+    <form [formGroup]="legalForm">
+      <div class="row d-flex">
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="country"
+                 type="text"
+                 formControlName="country">
+          <label for="country" class="custom-label">Country*</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="locality"
+                 type="text"
+                 formControlName="locality">
+          <label for="locality" class="custom-label">Locality*</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="region"
+                 type="text"
+                 formControlName="region">
+          <label for="region" class="custom-label">Region*</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="district"
+                 type="text"
+                 formControlName="district">
+          <label for="district" class="custom-label">District*</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="localityType"
+                 type="text"
+                 formControlName="localityType">
+          <label for="localityType" class="custom-label">Type of the locality (city, countryside,...)*</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="zip"
+                 type="text"
+                 formControlName="zip">
+          <label for="zip" class="custom-label">Zip code*</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="street"
+                 type="text"
+                 formControlName="street">
+          <label for="street" class="custom-label">Street*</label>
+        </div>
+        <div class="col-4 form-field">
+          <input class="custom-input"
+                 id="house"
+                 type="text"
+                 formControlName="house">
+          <label for="house" class="custom-label">House*</label>
+        </div>
+        <div class="col-2 form-field">
+          <input class="custom-input"
+                 id="building"
+                 type="text"
+                 formControlName="building">
+          <label for="building" class="custom-label">Building</label>
+        </div>
+        <div class="col-2 form-field">
+          <input class="custom-input"
+                 id="office"
+                 type="text"
+                 formControlName="office">
+          <label for="office" class="custom-label">Office</label>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <div class=" d-flex justify-content-end">
+    <div class="btn-send-messages d-flex justify-content-center align-items-center"><span>Send us a message</span></div>
+  </div>
+</main>

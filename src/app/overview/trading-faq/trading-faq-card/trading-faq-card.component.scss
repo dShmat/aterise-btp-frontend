@@ -1,0 +1,24 @@
+.card {
+  border-radius: 15px;
+
+  .card-body {
+    padding: 0;
+  }
+
+  .card-title {
+    color: white;
+  }
+}
+
+.green {
+  border: 1px solid #219967;
+
+  .card-title {
+    background: #219967;
+
+  }
+}
+
+.orange {
+  border: 1px solid #CE7E06;
+}

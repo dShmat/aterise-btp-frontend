@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {TokensPageComponent} from './tokens-page/tokens-page.component';
-import {OnlineFormRoutingModule} from './tokens-routing.module';
+import {TokensRoutingModule} from './tokens-routing.module';
 
 
 @NgModule({
@@ -10,7 +10,7 @@ import {OnlineFormRoutingModule} from './tokens-routing.module';
   ],
   imports: [
     CommonModule,
-    OnlineFormRoutingModule
+    TokensRoutingModule
   ]
 })
 export class TokensModule {

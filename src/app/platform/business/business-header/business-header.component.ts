@@ -11,7 +11,6 @@ export class BusinessHeaderComponent {
   constructor(private router: Router) {
   }
 
-
   logOut() {
     this.router.navigate(['overview']);
   }

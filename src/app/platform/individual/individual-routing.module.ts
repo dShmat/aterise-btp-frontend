@@ -20,6 +20,10 @@ const routes: Routes = [
         path: 'tokens',
         loadChildren: () => import('./tokens/tokens.module').then(m => m.TokensModule)
       },
+      {
+        path: 'wallet',
+        loadChildren: () => import('./wallet/wallet.module').then(m => m.WalletModule)
+      },
     ]
   },
 ];

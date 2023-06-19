@@ -38,9 +38,10 @@ nav {
   margin-right: 30px;
 }
 
-.logo-border{
+.logo-border {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
+
 .topup-withdraw-money {
   border: 1px solid #818181;
   border-radius: 6px;
@@ -63,6 +64,7 @@ nav {
 
 .topup-money {
   padding-left: 30px;
+
   &::before {
     content: url(../../../../assets/icons/downloads.svg);
     position: absolute;
@@ -74,14 +76,16 @@ nav {
 
 .withdraw-money {
   padding-left: 30px;
+
   &::before {
-    content: url(../../../../assets/icons/downloads.svg);
+    content: url(../../../../assets/icons/uploads.svg);
     position: absolute;
     width: 14px;
     height: 16px;
     right: 115px;
   }
 }
-.header-right-margin{
+
+.header-right-margin {
   margin-right: 20px;
 }

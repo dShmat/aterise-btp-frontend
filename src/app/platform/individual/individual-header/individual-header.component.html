@@ -1,5 +1,5 @@
 <header class="header container-fluid bg-white align-items-center w-100">
-  <div class="d-flex justify-content-start" >
+  <div class="d-flex justify-content-start">
     <div class="d-flex header-right-margin">
       <img src="assets/icons/aterise-logo.svg" class="d-block me-2" alt="logo">
       <img src="assets/icons/btp-logo.svg" class="d-block" alt="logo">
@@ -7,11 +7,17 @@
     <div class="logo-border header-right-margin"></div>
     <div class="d-flex button-section header-right-margin">
       <div class="d-flex text-uppercase justify-content-start align-items-center wallet-items">
-        <div class="" ><a class="text-decoration-none wallet-item position-relative">My balance</a></div>
+        <div>
+          <a href="platform/individual/wallet" class="text-decoration-none wallet-item position-relative">My balance</a>
+        </div>
         <div class="d-flex justify-content-around align-items-center topup-withdraw-money">
-          <div class="topup-money position-relative w-50 d-flex justify-content-center"><a href="" class="text-decoration-none">top up</a></div>
+          <div class="topup-money position-relative w-50 d-flex justify-content-center">
+            <a href="platform/individual/wallet" class="text-decoration-none">top up</a>
+          </div>
           <div class="border-center"></div>
-          <div class="withdraw-money position-relative w-50 d-flex justify-content-center"><a href="" class="text-decoration-none">withdraw</a></div>
+          <div class="withdraw-money position-relative w-50 d-flex justify-content-center">
+            <a class="text-decoration-none">withdraw</a>
+          </div>
         </div>
       </div>
     </div>
@@ -19,19 +25,31 @@
   <div class="d-flex">
     <div class="d-flex">
       <div class="d-flex currency-container justify-content-between align-items-center">
-        <div class="d-flex me-4">0.00 <p class="currency">RUB</p><p class="currency text-lowercase">.sc</p></div>
-        <div class="d-flex me-4">0.00 <p class="currency">BYN</p><p class="currency text-lowercase">.sc</p></div>
-        <div class="d-flex me-4">0.00 <p class="currency">USD</p><p class="currency text-lowercase">.sc</p></div>
-        <div class="d-flex me-4">0.00 <p class="currency">EUR</p><p class="currency text-lowercase">.sc</p></div>
-      </div>
-      </div>
-      <div class="d-flex">
-        <img src="assets/icons/question.svg" class="d-block me-4" alt="faq">
-        <img src="assets/icons/notification.svg" class="d-block me-4" alt="notification">
-        <img src="assets/icons/profile-photo.svg" class="d-block me-4" alt="profile">
-        <img src="assets/icons/log-out.svg" class="d-block" alt="log-out" (click)="logOut()">
+        <div class="d-flex me-4">0.00
+          <div class="currency ms-1">RUB</div>
+          <p class="currency text-lowercase">.sc</p>
+        </div>
+        <div class="d-flex me-4">0.00
+          <div class="currency ms-1">BYN</div>
+          <p class="currency text-lowercase">.sc</p>
+        </div>
+        <div class="d-flex me-4">0.00
+          <div class="currency ms-1">USD</div>
+          <p class="currency text-lowercase">.sc</p>
+        </div>
+        <div class="d-flex me-4">0.00
+          <div class="currency ms-1">EUR</div>
+          <p class="currency text-lowercase">.sc</p>
+        </div>
       </div>
     </div>
+    <div class="d-flex">
+      <img src="assets/icons/question.svg" class="d-block me-4" alt="faq">
+      <img src="assets/icons/notification.svg" class="d-block me-4" alt="notification">
+      <img src="assets/icons/profile-photo.svg" class="d-block me-4" alt="profile">
+      <img src="assets/icons/log-out.svg" class="d-block" alt="log-out" (click)="logOut()">
+    </div>
+  </div>
 </header>
 
 <nav class="h-100 d-flex justify-content-center">

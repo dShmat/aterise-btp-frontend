@@ -27,6 +27,15 @@ body {
   justify-content: space-between;
   padding: 0 85px;
   z-index: 1;
+
+  .currency-container {
+    p {
+      margin: 0;
+    }
+    .currency {
+      color: #219967;
+    }
+  }
 }
 
 .main-wrapper {

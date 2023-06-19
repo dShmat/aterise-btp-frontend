@@ -17,7 +17,6 @@ nav {
       color: white;
       height: 120px;
 
-
       a {
         color: white;
         font-weight: 700;
@@ -35,13 +34,57 @@ nav {
   background-color: red;
 }
 
-.wallet-item{
+.wallet-item {
   margin-right: 30px;
+
+  &::before {
+    content: '|';
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 2px;
+    right: 120px;
+  }
 }
-.topup-withdraw-money{
-  border: 1px solid grey;
+
+.topup-withdraw-money {
+  border: 1px solid #818181;
   border-radius: 6px;
   min-width: 321px;
   height: 30px;
   background-color: #F1F1F1;
+}
+
+.topup-withdraw-money .border-center {
+  border: 1px solid #818181;
+  height: 100%;
+}
+
+.wallet-items a {
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #818181;
+}
+
+.topup-money {
+  padding-left: 30px;
+  &::before {
+    content: url(../../../../assets/icons/downloads.svg);
+    position: absolute;
+    width: 14px;
+    height: 16px;
+    right: 100px;
+  }
+}
+
+.withdraw-money {
+  padding-left: 30px;
+  &::before {
+    content: url(../../../../assets/icons/downloads.svg);
+    position: absolute;
+    width: 14px;
+    height: 16px;
+    right: 115px;
+  }
 }

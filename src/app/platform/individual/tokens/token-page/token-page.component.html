@@ -1,3 +1,130 @@
-<main>
+<section class="tokens-item">
+  <table class="w-100 p-0">
 
-</main>
+    <tr class="token-selection-title text-left">
+      <td colspan="3"></td>
+      <td class="p-0">Annual <br> rate</td>
+      <td class="p-0">Circulation <br> period</td>
+      <td class="p-0">Distribution <br> frequency</td>
+      <td class="p-0">Price of <br>1 token</td>
+      <td class="p-0">Released</td>
+      <td class="p-0">Sold</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="background-row">
+      <th class="p-0">
+        <div class="round-img d-flex align-items-center justify-content-center">
+          <img src="assets/icons/token1.svg" alt="">
+        </div>
+      </th>
+      <td class="p-0">
+        <p class="company-title m-0">General leasing</p>
+        <p class="company-subtitle m-0">DGENERAL_(USD_406)</p>
+      </td>
+      <td class="usd-rate-color">USD.sc</td>
+      <td class="usd-rate-color">12.00%</td>
+      <td class="months position-relative">36 months</td>
+      <td class="token-selection-text">Monthly</td>
+      <td class="token-selection-text">100 USD.sc</td>
+      <td class="token-selection-text">294 700 USD.sc</td>
+      <td class="token-selection-text me-4">1%</td>
+      <td class="text-center" (click)="close()">Close</td>
+      <td><img src="assets/icons/cross.svg" alt='cross' (click)="close()"></td>
+    </tr>
+
+  </table>
+
+  <div class="tokens-item-block w-100 m-0 d-flex">
+
+    <div class="tokens-item-left m-0 col-8">
+
+      <h3 class="title text-uppercase">More about the token</h3>
+      <div>
+        <div class="tokens-item-block-title">Payout</div>
+        <div class="d-flex w-100 justify-content-between">
+          <input type="text" class="schedule-choose" placeholder="Monthly">
+          <div class="schedule-btn d-flex align-items-center justify-content-center ">
+            <div class="schedule-btn-text position-relative">
+              Payout Schedule
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between w-100">
+        <div class="d-flex flex-column tokens-item-block-width">
+          <div class="tokens-item-block-title">Circulation period</div>
+          <input type="text" class="tokens-item-common-input" placeholder="01.03.2023 - 09.03.2026">
+        </div>
+        <div class="d-flex flex-column tokens-item-block-width">
+          <div class="tokens-item-block-title">Sale end date</div>
+          <input type="text" class="tokens-item-common-input" placeholder="01.03.2024s">
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between w-100">
+        <div class="d-flex flex-column tokens-item-block-width">
+          <div class="tokens-item-block-title">Early repayment through</div>
+          <input type="text" class="tokens-item-common-input" placeholder="122 days">
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center w-100 tokens-item-offers-block ">
+        <p class="tokens-item-offers-text text-uppercase m-0">offers on the secondary market</p>
+        <div class="d-flex align-items-center justify-content-center text-uppercase btn-no">No</div>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center w-10 tokens-item-offers-footer">
+        <div class="tokens-item-offers-footer-title position-relative">2 Investors have bought this token</div>
+        <div class="tokens-item-offers-footer-subtitle">Whiten paper</div>
+      </div>
+
+    </div>
+
+    <div class="tokens-item-right m-0 col-4">
+      <div class="tokens-item-right-header text-uppercase d-flex justify-content-between align-items-center">
+        <h3 class="d-flex align-items-center m-0">buy tokens</h3>
+        <input type="text">
+      </div>
+
+      <div class="tokens-item-right-main">
+        <div class="d-flex justify-content-between buy-token-with-border">
+          <div class="buy-token-text buy-token-usd position-relative">Income</div>
+          <div class="buy-token-sum mr-0">4 464.90 USD.sc</div>
+        </div>
+        <div class="sub-items">
+          <div class="d-flex justify-content-between">
+            <div class="buy-token-text">Price</div>
+            <div class="buy-token-sum">12 300 USD.sc</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="buy-token-text">Available in the wallet</div>
+            <div class="buy-token-sum">10 000 USD.sc</div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="buy-token-text d-flex">
+              <div class="me-2">Needs to be topped up</div>
+              <img src="assets/icons/question-icon.svg" alt="">
+            </div>
+            <div class="buy-token-sum">2 300 USD.sc</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between tokens-item-right-footer">
+        <div class="tokens-item-right-footer-btn d-flex align-items-center justify-content-center"><span>Top up the wallet</span>
+        </div>
+        <div class="d-flex tokens-item-right-close-block align-items-center" (click)="close()">
+          <p class="d-flex tokens-item-right-close-text m-0">Close</p>
+          <img src="assets/icons/cross.svg" alt="close">
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class=" d-flex justify-content-end">
+    <div class="btn-send-messages d-flex justify-content-center align-items-center"><span>Send us a message</span></div>
+  </div>
+</section>

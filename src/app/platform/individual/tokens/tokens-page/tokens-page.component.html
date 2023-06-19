@@ -1,4 +1,4 @@
-<ng-container *ngIf="!selectedToken">
+<ng-container *ngIf="!isSelectedToken()">
   <main class="token-selection">
 
     <div class="d-flex">
@@ -59,7 +59,7 @@
         <td class="token-selection-text">1%</td>
         <td>
           <div class="d-flex align-items-center justify-content-center">
-            <div class="btn-buy d-flex align-items-center justify-content-center">buy</div>
+            <div class="btn-buy d-flex align-items-center justify-content-center" (click)="selectToken()">buy</div>
           </div>
         </td>
       </tr>
@@ -82,7 +82,7 @@
         <td class="token-selection-text">1%</td>
         <td>
           <div class="d-flex align-items-center justify-content-center">
-            <div class="btn-buy d-flex align-items-center justify-content-center">buy</div>
+            <div class="btn-buy d-flex align-items-center justify-content-center" (click)="selectToken()">buy</div>
           </div>
         </td>
       </tr>
@@ -105,7 +105,7 @@
         <td class="token-selection-text">1%</td>
         <td>
           <div class="d-flex align-items-center justify-content-center">
-            <div class="btn-buy d-flex align-items-center justify-content-center">buy</div>
+            <div class="btn-buy d-flex align-items-center justify-content-center" (click)="selectToken()">buy</div>
           </div>
         </td>
       </tr>
@@ -128,7 +128,7 @@
         <td class="token-selection-text">1%</td>
         <td>
           <div class="d-flex align-items-center justify-content-center">
-            <div class="btn-buy d-flex align-items-center justify-content-center">buy</div>
+            <div class="btn-buy d-flex align-items-center justify-content-center" (click)="selectToken()">buy</div>
           </div>
         </td>
       </tr>
@@ -151,7 +151,7 @@
         <td class="token-selection-text">1%</td>
         <td>
           <div class="d-flex align-items-center justify-content-center">
-            <div class="btn-buy d-flex align-items-center justify-content-center">buy</div>
+            <div class="btn-buy d-flex align-items-center justify-content-center" (click)="selectToken()">buy</div>
           </div>
         </td>
       </tr>
@@ -162,6 +162,6 @@
     </div>
   </main>
 </ng-container>
-<ng-container *ngIf="selectedToken">
-  <app-token-page></app-token-page>
+<ng-container *ngIf="isSelectedToken()">
+  <app-token-page (tokenDeselected)="selectToken()"></app-token-page>
 </ng-container>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-token-page',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./token-page.component.scss']
 })
 export class TokenPageComponent {
+  @Output() tokenDeselected = new EventEmitter<any>();
 
+  close() {
+    this.tokenDeselected.emit(false);
+  }
 }

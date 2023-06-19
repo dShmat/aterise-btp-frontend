@@ -36,20 +36,11 @@ nav {
 
 .wallet-item {
   margin-right: 30px;
-
-  &::before {
-    content: '|';
-    height: 100%;
-    font-weight: 700;
-    font-size: 20px;
-    color: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    bottom: 2px;
-    left: -30px;
-    bottom: 7px;
-  }
 }
 
+.logo-border{
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
 .topup-withdraw-money {
   border: 1px solid #818181;
   border-radius: 6px;
@@ -59,7 +50,7 @@ nav {
 }
 
 .topup-withdraw-money .border-center {
-  border: 1px solid #818181;
+  border-right: 1px solid #818181;
   height: 100%;
 }
 
@@ -90,4 +81,7 @@ nav {
     height: 16px;
     right: 115px;
   }
+}
+.header-right-margin{
+  margin-right: 20px;
 }

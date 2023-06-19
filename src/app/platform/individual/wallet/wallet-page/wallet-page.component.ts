@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Currency} from '../../../models/currency.model';
+import {Currency} from '../../../../shared/models/currency.model';
 
 @Component({
   selector: 'app-wallet-page',

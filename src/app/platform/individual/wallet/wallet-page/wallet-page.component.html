@@ -4,7 +4,7 @@
 
   <div class="d-flex justify-content-between currency-list">
 
-    <div class="currency-card px-4 py-3">
+    <div class="currency-card px-4 py-3" [class.selected]="isCurrencySelected(currencies[0])">
       <div class="card-header">
         <p class="currency-name">RUB.sc</p>
         <span class="currency-value">0.00</span>
@@ -12,13 +12,13 @@
       <div class="card-border"></div>
       <div class="text-left">
         <p class="total-usd d-flex">0.00</p>
-        <div class="login-btn d-flex justify-content-center align-items-center">
-          <a class="login-link text-decoration-none">Top up the wallet</a>
+        <div class="top-up-btn d-flex justify-content-center align-items-center" (click)="selectCurrency(currencies[0])">
+          <a class="top-up-link text-decoration-none">Top up the wallet</a>
         </div>
       </div>
     </div>
 
-    <div class="currency-card px-4 py-3">
+    <div class="currency-card px-4 py-3" [class.selected]="isCurrencySelected(currencies[1])">
       <div class="card-header">
         <p class="currency-name text-right">BYN.sc</p>
         <span class="currency-value text-right">0.00</span>
@@ -26,13 +26,13 @@
       <div class="card-border"></div>
       <div class="text-left">
         <p class="total-usd d-flex">0.00</p>
-        <div class="login-btn d-flex justify-content-center align-items-center">
-          <a class="login-link text-decoration-none">Top up the wallet</a>
+        <div class="top-up-btn d-flex justify-content-center align-items-center" (click)="selectCurrency(currencies[1])">
+          <a class="top-up-link text-decoration-none">Top up the wallet</a>
         </div>
       </div>
     </div>
 
-    <div class="currency-card selected px-4 py-3">
+    <div class="currency-card px-4 py-3" [class.selected]="isCurrencySelected(currencies[2])">
       <div class="card-header">
         <p class="currency-name">USD.sc</p>
         <span class="currency-value">0.00</span>
@@ -40,13 +40,13 @@
       <div class="card-border"></div>
       <div class="text-left">
         <p class="total-usd  d-flex">0.00</p>
-        <div class="login-btn d-flex justify-content-center align-items-center">
-          <a class="login-link text-decoration-none">Top up the wallet</a>
+        <div class="top-up-btn d-flex justify-content-center align-items-center" (click)="selectCurrency(currencies[2])">
+          <a class="top-up-link text-decoration-none">Top up the wallet</a>
         </div>
       </div>
     </div>
 
-    <div class="currency-card px-4 py-3">
+    <div class="currency-card px-4 py-3" [class.selected]="isCurrencySelected(currencies[3])">
       <div class="card-header">
         <p class="currency-name">EUR.sc</p>
         <span class="currency-value">0.00</span>
@@ -54,64 +54,17 @@
       <div class="card-border"></div>
       <div class="text-left">
         <p class="total-usd d-flex">0.00</p>
-        <div class="login-btn d-flex justify-content-center align-items-center">
-          <a class="login-link text-decoration-none">Top up the wallet</a>
+        <div class="top-up-btn d-flex justify-content-center align-items-center" (click)="selectCurrency(currencies[3])">
+          <a class="top-up-link text-decoration-none">Top up the wallet</a>
         </div>
       </div>
     </div>
 
   </div>
 </section>
-<section class="selected-currency">
 
-  <div class=" selected-currency-block d-flex w-100 border">
+<app-currency-top-up [selectedCurrency]="selectedCurrency"></app-currency-top-up>
 
-    <div class="selected-currency-more">
-      <h3 class="title text-uppercase">More about the chosen currency</h3>
-      <div class="d-flex justify-content-between selected-currency-more-block">
-        <p class="selected-currency-more-text">Total in the wallet</p>
-        <p class="sum usd-white">0.00 USD.sc</p>
-      </div>
-      <div class="d-flex justify-content-between selected-currency-more-block">
-        <p class="selected-currency-more-text">Free balance</p>
-        <p class="sum">0.00 USD.sc</p>
-      </div>
-
-    </div>
-
-
-    <div class="selected-currency-top-up">
-      <h3 class="title text-uppercase">top up in the chosen currency</h3>
-
-      <div class="d-flex justify-content-between">
-        <p class="top-up-subtitle d-flex align-items-center">Type the amount you want to top up (USD.sc)</p>
-        <input type="text" class="amount" placeholder="10000">
-      </div>
-
-      <div class="d-flex">
-        <p class="title-payment-method">Choose payment method</p>
-        <img src="assets/icons/question-icon.svg" alt="question" class="title-payment-img">
-      </div>
-
-      <div class="position-relative mb-3">
-        <img src="assets/icons//input-card.svg" alt="card" class="card-visa-mastercard">
-        <input type="text" class="w-100 payment-method" placeholder="Credit card">
-      </div>
-      <div class="position-relative  w-100">
-        <img src="assets/icons//bank-icon.svg" alt="bank" class="payment-bank">
-        <input type="text" class="w-100 position-relative payment-method m-0 payment-method-bank" placeholder="Bank transfer">
-      </div>
-
-      <p class="text-commission">Banks may apply additional commission for the transfers</p>
-      <div class="d-flex justify-content-between">
-        <p class="total-sum-text">Total with commission</p>
-        <p class="total-sum"><span>12 300.00 </span>USD.sc</p>
-      </div>
-    </div>
-  </div>
-
-  <div class=" d-flex justify-content-end" >
-    <div class="btn-send-messages d-flex justify-content-center align-items-center"><span>Send us a message</span> </div>
-  </div>
-
-</section>
+<div class=" d-flex justify-content-end" >
+  <div class="btn-send-messages d-flex justify-content-center align-items-center"><span>Send us a message</span> </div>
+</div>

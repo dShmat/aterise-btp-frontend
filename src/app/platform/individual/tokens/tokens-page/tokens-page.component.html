@@ -1,162 +1,167 @@
-<main class="token-selection">
-  <div class="d-flex">
-    <div class="token-selection-link buy-token position-relative">Buy tokens</div>
-    <div class="token-selection-link my-token position-relative">My tokens</div>
-    <div class="token-selection-link history-token position-relative">History of operations</div>
-  </div>
-  <div class="border-token-selection"></div>
+<ng-container *ngIf="!selectedToken">
+  <main class="token-selection">
 
-  <table class="w-100 p-0">
-    <tr>
-      <th colspan="10" class="token-selection-header">
-        <div class="d-flex justify-content-between">
-          <div class="d-flex w-50 align-items-center">
-            <div class="header-title">token selection</div>
-            <div class="header-subtitle">Found 35 tokens</div>
-          </div>
-          <div class="d-flex w-50 justify-content-end">
-            <div class="d-flex">
-              <div class=" d-flex justify-content-center align-items-center money-border">EUR</div>
-              <div class="d-flex justify-content-center align-items-center money-border">usd</div>
-              <div class="d-flex justify-content-center align-items-center money-border">CHF</div>
-              <div class=" d-flex justify-content-center align-items-center money-border">GBP</div>
+    <div class="d-flex">
+      <div class="token-selection-link buy-token position-relative">Buy tokens</div>
+      <div class="token-selection-link my-token position-relative">My tokens</div>
+      <div class="token-selection-link history-token position-relative">History of operations</div>
+    </div>
+    <div class="border-token-selection"></div>
+
+    <table class="w-100 p-0">
+      <tr>
+        <th colspan="10" class="token-selection-header">
+          <div class="d-flex justify-content-between">
+            <div class="d-flex w-50 align-items-center">
+              <div class="header-title">token selection</div>
+              <div class="header-subtitle">Found 35 tokens</div>
             </div>
-            <div class="latest-first d-flex justify-content-end align-items-center">Latest first</div>
+            <div class="d-flex w-50 justify-content-end">
+              <div class="d-flex">
+                <div class=" d-flex justify-content-center align-items-center money-border">EUR</div>
+                <div class="d-flex justify-content-center align-items-center money-border">usd</div>
+                <div class="d-flex justify-content-center align-items-center money-border">CHF</div>
+                <div class=" d-flex justify-content-center align-items-center money-border">GBP</div>
+              </div>
+              <div class="latest-first d-flex justify-content-end align-items-center">Latest first</div>
+            </div>
           </div>
-        </div>
-      </th>
-    </tr>
-    <tr class="token-selection-title text-left">
-      <td></td>
-      <td class="p-0">Company</td>
-      <td class="p-0">Currency</td>
-      <td class="p-0">Annual rate</td>
-      <td class="p-0">Circulation period</td>
-      <td class="p-0">Distribution frequency</td>
-      <td class="p-0">Price of 1 token</td>
-      <td class="p-0">Released</td>
-      <td class="p-0">Sold</td>
-      <td class="p-0"></td>
-    </tr>
-    <tr class="table-striped">
-      <th class="p-0">
-        <div class="round-img d-flex align-items-center justify-content-center">
-          <img src="assets/icons/token1.svg" alt="">
-        </div>
-      </th>
-      <td class="p-0">
-        <p class="company-title m-0">General leasing</p>
-        <p class="company-subtitle m-0">DGENERAL_(USD_406)</p>
-      </td>
-      <td class="usd-rate-color">USD.sc</td>
-      <td class="usd-rate-color">12.00%</td>
-      <td class="months position-relative">36 months</td>
-      <td class="token-selection-text">Monthly</td>
-      <td class="token-selection-text">100 USD.sc</td>
-      <td class="token-selection-text">294 700 USD.sc</td>
-      <td class="token-selection-text">1%</td>
-      <td>
-        <div class="d-flex align-items-center justify-content-center">
-          <div class="btn-buy d-flex align-items-center justify-content-center">buy</div>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <th>
-        <div class="round-img d-flex align-items-center justify-content-center even">
-          <img src="assets/icons/token2.svg" alt="">
-        </div>
-      </th>
-      <td>
-        <p class="company-title m-0">General leasing</p>
-        <p class="company-subtitle m-0">DGENERAL_(USD_406)</p>
-      </td>
-      <td class="usd-rate-color">USD.sc</td>
-      <td class="usd-rate-color">12.00%</td>
-      <td class="months position-relative">36 months</td>
-      <td class="token-selection-text">Weekly</td>
-      <td class="token-selection-text">100 USD.sc</td>
-      <td class="token-selection-text">294 700 USD.sc</td>
-      <td class="token-selection-text">1%</td>
-      <td>
-        <div class="d-flex align-items-center justify-content-center">
-          <div class="btn-buy d-flex align-items-center justify-content-center">buy</div>
-        </div>
-      </td>
-    </tr>
-    <tr class="table-striped">
-      <th>
-        <div class="round-img d-flex align-items-center justify-content-center">
-          <img src="assets/icons/token3.svg" alt="">
-        </div>
-      </th>
-      <td>
-        <p class="company-title m-0">General leasing</p>
-        <p class="company-subtitle m-0">DGENERAL_(USD_406)</p>
-      </td>
-      <td class="usd-rate-color">USD.sc</td>
-      <td class="usd-rate-color">12.00%</td>
-      <td class="months position-relative">36 months</td>
-      <td class="token-selection-text">6 Months</td>
-      <td class="token-selection-text">100 USD.sc</td>
-      <td class="token-selection-text">294 700 USD.sc</td>
-      <td class="token-selection-text">1%</td>
-      <td>
-        <div class="d-flex align-items-center justify-content-center">
-          <div class="btn-buy d-flex align-items-center justify-content-center">buy</div>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <th>
-        <div class="round-img d-flex align-items-center justify-content-center">
-          <img src="assets/icons/token4.svg" alt="">
-        </div>
-      </th>
-      <td>
-        <p class="company-title m-0">General leasing</p>
-        <p class="company-subtitle m-0">DGENERAL_(USD_406)</p>
-      </td>
-      <td class="usd-rate-color">USD.sc</td>
-      <td class="usd-rate-color">12.00%</td>
-      <td class="months position-relative">36 months</td>
-      <td class="token-selection-text">Monthly</td>
-      <td class="token-selection-text">100 USD.sc</td>
-      <td class="token-selection-text">294 700 USD.sc</td>
-      <td class="token-selection-text">1%</td>
-      <td>
-        <div class="d-flex align-items-center justify-content-center">
-          <div class="btn-buy d-flex align-items-center justify-content-center">buy</div>
-        </div>
-      </td>
-    </tr>
-    <tr class="table-striped">
-      <th>
-        <div class="round-img d-flex align-items-center justify-content-center">
-          <img src="assets/icons/token5.svg" alt="">
-        </div>
-      </th>
-      <td>
-        <p class="company-title m-0">General leasing</p>
-        <p class="company-subtitle m-0">DGENERAL_(USD_406)</p>
-      </td>
-      <td class="usd-rate-color">USD.sc</td>
-      <td class="usd-rate-color">12.00%</td>
-      <td class="months position-relative">36 months</td>
-      <td class="token-selection-text">Weekly</td>
-      <td class="token-selection-text">100 USD.sc</td>
-      <td class="token-selection-text">294 700 USD.sc</td>
-      <td class="token-selection-text">1%</td>
-      <td>
-        <div class="d-flex align-items-center justify-content-center">
-          <div class="btn-buy d-flex align-items-center justify-content-center">buy</div>
-        </div>
-      </td>
-    </tr>
-  </table>
-
-  <div class=" d-flex justify-content-end">
-    <div class="btn-send-messages d-flex justify-content-center align-items-center"><span>Send us a message</span></div>
-  </div>
-
-</main>
+        </th>
+      </tr>
+      <tr class="token-selection-title text-left">
+        <td></td>
+        <td class="p-0">Company</td>
+        <td class="p-0">Currency</td>
+        <td class="p-0">Annual rate</td>
+        <td class="p-0">Circulation period</td>
+        <td class="p-0">Distribution frequency</td>
+        <td class="p-0">Price of 1 token</td>
+        <td class="p-0">Released</td>
+        <td class="p-0">Sold</td>
+        <td class="p-0"></td>
+      </tr>
+      <tr class="table-striped">
+        <th class="p-0">
+          <div class="round-img d-flex align-items-center justify-content-center">
+            <img src="assets/icons/token1.svg" alt="">
+          </div>
+        </th>
+        <td class="p-0">
+          <p class="company-title m-0">General leasing</p>
+          <p class="company-subtitle m-0">DGENERAL_(USD_406)</p>
+        </td>
+        <td class="usd-rate-color">USD.sc</td>
+        <td class="usd-rate-color">12.00%</td>
+        <td class="months position-relative">36 months</td>
+        <td class="token-selection-text">Monthly</td>
+        <td class="token-selection-text">100 USD.sc</td>
+        <td class="token-selection-text">294 700 USD.sc</td>
+        <td class="token-selection-text">1%</td>
+        <td>
+          <div class="d-flex align-items-center justify-content-center">
+            <div class="btn-buy d-flex align-items-center justify-content-center">buy</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <div class="round-img d-flex align-items-center justify-content-center even">
+            <img src="assets/icons/token2.svg" alt="">
+          </div>
+        </th>
+        <td>
+          <p class="company-title m-0">General leasing</p>
+          <p class="company-subtitle m-0">DGENERAL_(USD_406)</p>
+        </td>
+        <td class="usd-rate-color">USD.sc</td>
+        <td class="usd-rate-color">12.00%</td>
+        <td class="months position-relative">36 months</td>
+        <td class="token-selection-text">Weekly</td>
+        <td class="token-selection-text">100 USD.sc</td>
+        <td class="token-selection-text">294 700 USD.sc</td>
+        <td class="token-selection-text">1%</td>
+        <td>
+          <div class="d-flex align-items-center justify-content-center">
+            <div class="btn-buy d-flex align-items-center justify-content-center">buy</div>
+          </div>
+        </td>
+      </tr>
+      <tr class="table-striped">
+        <th>
+          <div class="round-img d-flex align-items-center justify-content-center">
+            <img src="assets/icons/token3.svg" alt="">
+          </div>
+        </th>
+        <td>
+          <p class="company-title m-0">General leasing</p>
+          <p class="company-subtitle m-0">DGENERAL_(USD_406)</p>
+        </td>
+        <td class="usd-rate-color">USD.sc</td>
+        <td class="usd-rate-color">12.00%</td>
+        <td class="months position-relative">36 months</td>
+        <td class="token-selection-text">6 Months</td>
+        <td class="token-selection-text">100 USD.sc</td>
+        <td class="token-selection-text">294 700 USD.sc</td>
+        <td class="token-selection-text">1%</td>
+        <td>
+          <div class="d-flex align-items-center justify-content-center">
+            <div class="btn-buy d-flex align-items-center justify-content-center">buy</div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <div class="round-img d-flex align-items-center justify-content-center">
+            <img src="assets/icons/token4.svg" alt="">
+          </div>
+        </th>
+        <td>
+          <p class="company-title m-0">General leasing</p>
+          <p class="company-subtitle m-0">DGENERAL_(USD_406)</p>
+        </td>
+        <td class="usd-rate-color">USD.sc</td>
+        <td class="usd-rate-color">12.00%</td>
+        <td class="months position-relative">36 months</td>
+        <td class="token-selection-text">Monthly</td>
+        <td class="token-selection-text">100 USD.sc</td>
+        <td class="token-selection-text">294 700 USD.sc</td>
+        <td class="token-selection-text">1%</td>
+        <td>
+          <div class="d-flex align-items-center justify-content-center">
+            <div class="btn-buy d-flex align-items-center justify-content-center">buy</div>
+          </div>
+        </td>
+      </tr>
+      <tr class="table-striped">
+        <th>
+          <div class="round-img d-flex align-items-center justify-content-center">
+            <img src="assets/icons/token5.svg" alt="">
+          </div>
+        </th>
+        <td>
+          <p class="company-title m-0">General leasing</p>
+          <p class="company-subtitle m-0">DGENERAL_(USD_406)</p>
+        </td>
+        <td class="usd-rate-color">USD.sc</td>
+        <td class="usd-rate-color">12.00%</td>
+        <td class="months position-relative">36 months</td>
+        <td class="token-selection-text">Weekly</td>
+        <td class="token-selection-text">100 USD.sc</td>
+        <td class="token-selection-text">294 700 USD.sc</td>
+        <td class="token-selection-text">1%</td>
+        <td>
+          <div class="d-flex align-items-center justify-content-center">
+            <div class="btn-buy d-flex align-items-center justify-content-center">buy</div>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div class=" d-flex justify-content-end">
+      <div class="btn-send-messages d-flex justify-content-center align-items-center"><span>Send us a message</span>
+      </div>
+    </div>
+  </main>
+</ng-container>
+<ng-container *ngIf="selectedToken">
+  <app-token-page></app-token-page>
+</ng-container>

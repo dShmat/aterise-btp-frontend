@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class TokensPageComponent {
 
+  _token: any;
+  get selectedToken () {
+    return null
+  }
+
+  set selectedToken(token: any) {
+    this._token = token;
+  }
 }

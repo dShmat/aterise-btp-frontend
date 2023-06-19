@@ -1,0 +1,151 @@
+.selected-currency {
+  padding: 40px 86px 30px 69px;
+}
+
+.selected-currency-block {
+  min-height: 438px;
+  margin-bottom: 46px;
+
+  .title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 35px;
+  }
+}
+
+.selected-currency-more {
+  background-color: #5e5d5b;
+  width: 50%;
+  padding: 35px 25px;
+
+  .sum {
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+}
+
+.selected-currency-top-up {
+  width: 50%;
+  background: #3F3F46;
+  padding: 35px 25px;
+
+  .total-sum-text {
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+
+  .total-sum {
+    font-size: 16px;
+    color: #FFFFFF;
+    span {
+      color: #0BD0FE;
+    }
+  }
+}
+
+.selected-currency-more-text {
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.selected-currency-more-block {
+  width: 60%;
+}
+
+.usd-white {
+  position: relative;
+
+  &::before {
+    content: url(../../../../../../assets/icons/usd-white.svg);
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 100px;
+    top: 3px;
+  }
+}
+
+.top-up-subtitle {
+  font-size: 16px;
+  color: #FFFFFF;
+  height: 50px;
+}
+
+.amount {
+  width: 168px;
+  height: 50px;
+  border: 1px solid #FFFFFF;
+  border-radius: 15px;
+  background-color: #3F3F46;
+  font-size: 16px;
+  text-indent: 25px;
+  color: #FFFFFF;
+}
+
+.title-payment-method {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.title-payment-img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.payment-method {
+  height: 50px;
+  background: #5e5d5b;
+  border: 1px solid #6DCAE8;
+  border-radius: 15px;
+  text-indent: 120px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #56D4FE;
+
+  &::placeholder {
+    color: #56D4FE;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+.card-visa-mastercard {
+  position: absolute;
+  border: none;
+  width: 80px;
+  height: 27px;
+  top: 10px;
+  left: 20px;
+}
+
+.payment-bank {
+  width: 20px;
+  height: 20px;
+  top: 12px;
+  left: 20px;
+  position: absolute;
+  z-index: 1;
+}
+
+.payment-method-bank {
+  color: #FFFFFF;
+  text-indent: 50px;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-indent: 50px;
+  }
+}
+
+.text-commission {
+  font-size: 14px;
+  color: #FFFFFF;
+  margin: 13px 0 30px;
+}

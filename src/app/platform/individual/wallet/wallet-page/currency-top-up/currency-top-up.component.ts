@@ -16,7 +16,7 @@ export class CurrencyTopUpComponent implements OnInit {
 
   totalValue: number = 0;
 
-  constructor(private fb: UntypedFormBuilder, private router: Router) {
+  constructor(private fb: UntypedFormBuilder) {
   }
 
   private _currency: Currency;

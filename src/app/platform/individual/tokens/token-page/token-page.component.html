@@ -84,29 +84,35 @@
     <div class="tokens-item-right m-0 col-4">
       <div class="tokens-item-right-header text-uppercase d-flex justify-content-between align-items-center">
         <h3 class="d-flex align-items-center m-0">buy bonds</h3>
-        <input type="text">
+        <form [formGroup]="valueForm">
+          <input type='text'
+                 placeholder='10000'
+                 formControlName='value'
+                 maxlength="10">
+        </form>
       </div>
 
       <div class="tokens-item-right-main">
         <div class="d-flex justify-content-between buy-token-with-border">
           <div class="buy-token-text buy-token-usd position-relative">Income</div>
-          <div class="buy-token-sum mr-0">4 464.90 USD.sc</div>
+          <div class="buy-token-sum mr-0">{{ income | number: "0.2" }} USD.sc</div>
         </div>
         <div class="sub-items">
           <div class="d-flex justify-content-between">
             <div class="buy-token-text">Price</div>
-            <div class="buy-token-sum">12 300 USD.sc</div>
+            <div class="buy-token-sum">{{ price | number: "0.2" }} USD.sc</div>
           </div>
           <div class="d-flex justify-content-between">
             <div class="buy-token-text">Available in the wallet</div>
-            <div class="buy-token-sum">10 000 USD.sc</div>
+            <div class="buy-token-sum">{{ 0 | number: "0.2" }} USD.sc</div>
           </div>
           <div class="d-flex justify-content-between">
             <div class="buy-token-text d-flex">
-              <div class="me-2">Needs to be topped up</div>
-              <img src="assets/icons/question-icon.svg" alt="">
+              <div class="me-2">Needs to be topped up
+                <img src="assets/icons/question-icon.svg" alt="">
+              </div>
             </div>
-            <div class="buy-token-sum">2 300 USD.sc</div>
+            <div class="buy-token-sum">{{ needToBeeTopUp | number: "0.2" }} USD.sc</div>
           </div>
         </div>
       </div>

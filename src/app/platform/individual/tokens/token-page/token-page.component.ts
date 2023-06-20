@@ -33,7 +33,7 @@ export class TokenPageComponent implements OnInit {
   ngOnInit() {
     this.valueForm.get("value")?.valueChanges.subscribe(val => {
       if (val > 0) {
-        this.income = val * 100 * 36 * 0.12;
+        this.income = val * 100 * 3 * 0.12;
         this.price = val * 100;
         this.needToBeeTopUp = val * 100;
       } else {

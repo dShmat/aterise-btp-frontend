@@ -5,33 +5,37 @@ img:hover {
 nav {
   background-color: #117DA1;
   width: 120px;
-  margin-top: 55px;
+  padding-top: 55px;
   position: fixed;
 
   .nav-wrapper {
-    height: 75%;
-    margin-top: 24px;
-    width: 65%;
+    width: 100%;
 
     .nav-item {
       color: white;
       height: 120px;
+      width: 100%;
 
       a {
         color: white;
         font-weight: 700;
+        width: 100%;
 
         img {
           width: 40px;
           height: 40px;
         }
       }
+
+      &:hover {
+        background-color: #3DB4DC;
+      }
     }
   }
 }
 
 .active {
-  background-color: red;
+  background-color: #56D4FE;
 }
 
 .wallet-item {

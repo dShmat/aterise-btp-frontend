@@ -239,6 +239,7 @@ input::placeholder {
 
 .buy-token-usd {
   margin-left: 32px;
+
   &::before {
     content: url(../../../../../assets/icons/usd-white.svg);
     width: 18px;
@@ -293,7 +294,7 @@ input::placeholder {
   border-radius: 15px;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     background: #cccccc;
   }
 }

@@ -153,7 +153,7 @@ input.ng-valid + .custom-label {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 
   .individual::before {
-    content: url(../../../../assets/icons/individual-icon.svg);
+    content: url(../assets/icons/individual-icon.svg);
     width: 32px;
     height: 40px;
     position: absolute;
@@ -162,7 +162,7 @@ input.ng-valid + .custom-label {
   }
 
   .business::before {
-    content: url(../../../../assets/icons/business_icon.svg);
+    content: url(../assets/icons/business_icon.svg);
     width: 32px;
     height: 40px;
     position: absolute;
